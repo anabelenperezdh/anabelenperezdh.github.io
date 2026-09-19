@@ -457,6 +457,56 @@ section {
     letter-spacing: -0.04em;
 }
 
+/* HERRAMIENTAS Y CERTIFICACIONES */
+
+.tools {
+    margin-top: 110px;
+}
+
+.tools-title {
+    font-size: clamp(28px, 3.6vw, 46px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.tools-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.tools-group {
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.tools-list {
+    list-style: none;
+}
+
+.tools-list li {
+    padding: 18px 0;
+    border-top: 1px solid rgba(245, 241, 232, 0.3);
+}
+
+.tool-name {
+    display: block;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.tool-note {
+    display: block;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
 /* CONTACT */
 
 .contact {
@@ -588,6 +638,15 @@ footer {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .tools {
+        margin-top: 80px;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     footer {
