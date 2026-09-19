@@ -1,10 +1,8 @@
-<link rel="stylesheet" href="style.css">
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ana Belén Pérez | Marketing Digital & Estrategia</title>
@@ -13,8 +11,19 @@
         name="description"
         content="Portfolio de Ana Belén Pérez, especialista en marketing digital, estrategia, contenido y comunicación audiovisual."
     >
-
     <meta name="author" content="Ana Belén Pérez">
+    <meta name="theme-color" content="#F5F1E8">
+
+    <!-- Vista previa al compartir el enlace (WhatsApp, LinkedIn...).
+         Cuando conectes tu dominio, cambia estas URL por https://anabelenperez.com -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ana Belén Pérez | Marketing Digital & Estrategia">
+    <meta property="og:description" content="Estrategia, contenido y comunicación audiovisual para marcas que quieren conectar con las personas.">
+    <meta property="og:url" content="https://anabelenperezdh.github.io/">
+    <meta property="og:image" content="https://anabelenperezdh.github.io/og-image.jpg">
+
+    <!-- Icono de la pestaña (no necesita ningún archivo) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171717'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-size='22' font-weight='700' text-anchor='middle' fill='%23F5F1E8'%3EABP%3C/text%3E%3C/svg%3E">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,6 +36,7 @@
         <div class="nav-links">
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>
+            <a href="#trayectoria">Trayectoria</a>
             <a href="#contacto">Contacto</a>
         </div>
     </nav>
@@ -47,10 +57,16 @@
 
         <div class="hero-bottom">
 
-            <p class="hero-description">
-                Creo estrategias, contenidos e ideas digitales
-                que ayudan a las marcas a <strong>conectar con las personas.</strong>
-            </p>
+            <div>
+                <p class="hero-description">
+                    Creo estrategias, contenidos e ideas digitales
+                    que ayudan a las marcas a <strong>conectar con las personas.</strong>
+                </p>
+
+                <a class="btn btn-primary hero-cta" href="CV_Ana_Belen_Perez.pdf" download>
+                    Descargar CV
+                </a>
+            </div>
 
             <div class="scroll">
                 ↓ Explorar
@@ -89,21 +105,36 @@
 
             </div>
 
-            <div class="about-details">
+            <div class="about-side">
 
-                <div class="detail">
-                    <span>Formación</span>
-                    MBA + Máster en Marketing Digital y Ecommerce
-                </div>
+                <!-- Sube tu foto con este nombre: ana.jpg -->
+                <figure class="about-photo">
+                    <img
+                        src="ana.jpg"
+                        alt="Retrato de Ana Belén Pérez"
+                        width="800"
+                        height="1000"
+                        data-optional
+                    >
+                </figure>
 
-                <div class="detail">
-                    <span>Experiencia</span>
-                    Marketing · Audiovisual · Visual Marketing
-                </div>
+                <div class="about-details">
 
-                <div class="detail">
-                    <span>Idiomas</span>
-                    Español · Inglés C1
+                    <div class="detail">
+                        <span>Formación</span>
+                        MBA + Máster en Marketing Digital y Ecommerce
+                    </div>
+
+                    <div class="detail">
+                        <span>Experiencia</span>
+                        Marketing · Audiovisual · Visual Marketing
+                    </div>
+
+                    <div class="detail">
+                        <span>Idiomas</span>
+                        Español · Inglés C1
+                    </div>
+
                 </div>
 
             </div>
@@ -142,12 +173,31 @@
                 Digital
             </h3>
 
-            <p class="project-description">
-                Proyecto conceptual de estrategia digital
-                para una marca turística local.
-                Investigación, público objetivo,
-                posicionamiento, contenido y KPIs.
-            </p>
+            <div class="project-body">
+                <p class="project-description">
+                    Proyecto conceptual de estrategia digital
+                    para una marca turística local.
+                    Investigación, público objetivo,
+                    posicionamiento, contenido y KPIs.
+                </p>
+
+                <ul class="project-tags">
+                    <li>Investigación</li>
+                    <li>Posicionamiento</li>
+                    <li>KPIs</li>
+                </ul>
+            </div>
+
+            <!-- Imagen: proyecto-estrategia.jpg -->
+            <figure class="project-media">
+                <img
+                    src="proyecto-estrategia.jpg"
+                    alt="Imagen del proyecto de estrategia digital para una marca turística local"
+                    width="800"
+                    height="600"
+                    data-optional
+                >
+            </figure>
 
         </article>
 
@@ -161,11 +211,30 @@
                 Social
             </h3>
 
-            <p class="project-description">
-                Creación y edición de contenido audiovisual
-                para comunicación digital y redes sociales
-                durante mi etapa en The Bridge.
-            </p>
+            <div class="project-body">
+                <p class="project-description">
+                    Creación y edición de contenido audiovisual
+                    para comunicación digital y redes sociales
+                    durante mi etapa en The Bridge.
+                </p>
+
+                <ul class="project-tags">
+                    <li>Vídeo</li>
+                    <li>Streaming</li>
+                    <li>Redes sociales</li>
+                </ul>
+            </div>
+
+            <!-- Imagen: proyecto-content.jpg -->
+            <figure class="project-media">
+                <img
+                    src="proyecto-content.jpg"
+                    alt="Imagen de contenido audiovisual creado en The Bridge"
+                    width="800"
+                    height="600"
+                    data-optional
+                >
+            </figure>
 
         </article>
 
@@ -179,14 +248,118 @@
                 Marketing
             </h3>
 
-            <p class="project-description">
-                Experiencia en visual merchandising,
-                análisis de tendencias, comportamiento
-                del consumidor y experiencia de cliente
-                durante mi etapa en Zara Ireland.
-            </p>
+            <div class="project-body">
+                <p class="project-description">
+                    Experiencia en visual merchandising,
+                    análisis de tendencias, comportamiento
+                    del consumidor y experiencia de cliente
+                    durante mi etapa en Zara Ireland.
+                </p>
+
+                <ul class="project-tags">
+                    <li>Visual merchandising</li>
+                    <li>Análisis de KPI</li>
+                    <li>Experiencia de cliente</li>
+                </ul>
+            </div>
+
+            <!-- Imagen: proyecto-visual.jpg -->
+            <figure class="project-media">
+                <img
+                    src="proyecto-visual.jpg"
+                    alt="Imagen de visual marketing en tienda"
+                    width="800"
+                    height="600"
+                    data-optional
+                >
+            </figure>
 
         </article>
+
+    </section>
+
+
+    <!-- TRAYECTORIA -->
+
+    <section class="journey" id="trayectoria">
+
+        <div class="section-label">
+            03 — Trayectoria
+        </div>
+
+        <h2 class="section-title">
+            Cómo he llegado<br>
+            <em>hasta aquí.</em>
+        </h2>
+
+        <div class="journey-grid">
+
+            <div class="journey-col">
+
+                <h3 class="journey-heading">Experiencia</h3>
+
+                <div class="entry">
+                    <div class="entry-date">2023 – 2025</div>
+                    <div>
+                        <h4>Comercial / Visual Merchandiser</h4>
+                        <div class="entry-org">Zara Ireland</div>
+                        <p>
+                            Visual marketing para mejorar la experiencia de cliente,
+                            análisis de tendencias y KPI comerciales, y colaboración
+                            con el equipo regional de marketing en campañas y promociones.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-date">2022 – 2023</div>
+                    <div>
+                        <h4>Editora de vídeo y contenidos digitales</h4>
+                        <div class="entry-org">The Bridge</div>
+                        <p>
+                            Contenidos audiovisuales para redes y campañas, eventos en
+                            streaming y entrevistas para YouTube, Instagram y LinkedIn,
+                            con analítica para ajustar la estrategia de contenido.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-date">2020</div>
+                    <div>
+                        <h4>Becaria de producción de informativos</h4>
+                        <div class="entry-org">Atresmedia</div>
+                        <p>
+                            Coordinación de entrevistas, rodajes y reportajes, con foco
+                            en storytelling y narrativa visual.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="journey-col">
+
+                <h3 class="journey-heading">Formación</h3>
+
+                <div class="edu">
+                    <div class="edu-title">MBA + Máster en Marketing Digital y Ecommerce</div>
+                    <div class="edu-org">Escuela de Negocios de Barcelona · 2023 – 2025</div>
+                </div>
+
+                <div class="edu">
+                    <div class="edu-title">Máster en Postproducción y Edición de vídeo</div>
+                    <div class="edu-org">The Core Entertainment · 2021 – 2022</div>
+                </div>
+
+                <div class="edu">
+                    <div class="edu-title">FP Grado Superior en Producción audiovisual, eventos y espectáculos</div>
+                    <div class="edu-org">Grupo Planeta</div>
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -196,7 +369,7 @@
     <section class="services">
 
         <div class="section-label">
-            03 — Especialidades
+            04 — Especialidades
         </div>
 
         <h2 class="section-title">
@@ -240,7 +413,7 @@
     <section class="contact" id="contacto">
 
         <div class="section-label">
-            04 — Contacto
+            05 — Contacto
         </div>
 
         <h2>
@@ -248,12 +421,27 @@
             <span>interesante?</span>
         </h2>
 
-        <a
-            class="contact-email"
-            href="mailto:ana@anabelenperez.com"
-        >
-            ana@anabelenperez.com
-        </a>
+        <div class="contact-actions">
+
+            <!-- Cuando tu email del dominio funcione, cambia las dos direcciones de abajo por ana@anabelenperez.com -->
+            <a
+                class="contact-email"
+                href="mailto:anabelenperezh@gmail.com"
+            >
+                anabelenperezh@gmail.com
+            </a>
+
+            <a class="btn btn-primary" href="CV_Ana_Belen_Perez.pdf" download>
+                Descargar CV
+            </a>
+
+            <!-- LinkedIn: quita los símbolos de comentario y pon tu URL real
+            <a class="contact-link" href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+            -->
+
+        </div>
 
     </section>
 
@@ -266,9 +454,22 @@
 
     </footer>
 
-</body>
 
-</html>
+    <!-- Si una foto todavía no está subida, se oculta sin dejar un hueco roto -->
+    <script>
+        document.querySelectorAll('img[data-optional]').forEach(function (img) {
+            function hide() {
+                var figure = img.closest('figure');
+                figure.parentElement.classList.add('no-media');
+                figure.remove();
+            }
+            if (img.complete && img.naturalWidth === 0) {
+                hide();
+            } else {
+                img.addEventListener('error', hide);
+            }
+        });
+    </script>
 
 </body>
 </html>
