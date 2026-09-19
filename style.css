@@ -437,73 +437,54 @@ section {
     opacity: 0.7;
 }
 
-/* SERVICES */
+/* SKILLS (HABILIDADES) */
 
-.services {
+.skills {
     background: var(--olive);
     color: var(--cream);
 }
 
-.services-grid {
+.skill-list {
     margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
-.service {
-    padding: 35px 0;
+.skill {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+    gap: 30px 60px;
+    padding: 45px 0;
     border-top: 1px solid rgba(245, 241, 232, 0.3);
-    font-size: clamp(24px, 4vw, 50px);
+}
+
+.skill h3 {
+    font-size: clamp(28px, 3.6vw, 48px);
+    font-weight: 500;
+    line-height: 1;
     letter-spacing: -0.04em;
 }
 
-/* HERRAMIENTAS Y CERTIFICACIONES */
-
-.tools {
-    margin-top: 110px;
+.skill-desc {
+    max-width: 380px;
+    font-size: 16px;
 }
 
-.tools-title {
-    font-size: clamp(28px, 3.6vw, 46px);
-    font-weight: 500;
-    line-height: 1.05;
-    letter-spacing: -0.04em;
-}
-
-.tools-grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-}
-
-.tools-group {
-    margin-bottom: 16px;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.tools-list {
+.skill-tools {
     list-style: none;
-}
-
-.tools-list li {
-    padding: 18px 0;
-    border-top: 1px solid rgba(245, 241, 232, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .tool-name {
     display: block;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
 
 .tool-note {
     display: block;
-    margin-top: 4px;
+    margin-top: 2px;
     font-size: 15px;
 }
 
@@ -636,17 +617,10 @@ footer {
         gap: 8px;
     }
 
-    .services-grid {
+    .skill {
         grid-template-columns: 1fr;
-    }
-
-    .tools {
-        margin-top: 80px;
-    }
-
-    .tools-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
+        padding: 36px 0;
     }
 
     footer {
