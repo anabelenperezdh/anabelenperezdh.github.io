@@ -221,6 +221,23 @@ section {
     font-family: 'Playfair Display', serif;
 }
 
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+/* Texto ampliado de "Sobre mí" */
+.about-more {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
 .about-side {
     display: flex;
     flex-direction: column;
@@ -533,6 +550,14 @@ footer {
 
     .about-photo {
         max-width: 320px;
+    }
+
+    .about-main {
+        gap: 40px;
+    }
+
+    .about-more {
+        font-size: 16px;
     }
 
     .project,
