@@ -1,599 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Belén Pérez de Haro — Marketing digital &amp; contenido audiovisual</title>
+<meta name="description" content="Portfolio de Ana Belén Pérez de Haro: marketing digital, ecommerce y producción audiovisual en Almería.">
 
-    <title>Ana Belén Pérez | Marketing Digital en Almería</title>
-
-    <meta
-        name="description"
-        content="Portfolio de Ana Belén Pérez, marketing digital en Almería: estrategia, contenido y comunicación audiovisual."
-    >
-    <meta name="author" content="Ana Belén Pérez">
-    <meta name="theme-color" content="#F5F1E8">
-
-    <!-- Vista previa al compartir el enlace (WhatsApp, LinkedIn...).
-         Cuando conectes tu dominio, cambia estas URL por https://anabelenperez.com -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Ana Belén Pérez | Marketing Digital en Almería">
-    <meta property="og:description" content="Estrategia, contenido y comunicación audiovisual para marcas que quieren conectar con las personas.">
-    <meta property="og:url" content="https://anabelenperezdh.github.io/">
-    <meta property="og:image" content="https://anabelenperezdh.github.io/og-image.jpg">
-
-    <!-- Icono de la pestaña (no necesita ningún archivo) -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171717'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-size='22' font-weight='700' text-anchor='middle' fill='%23F5F1E8'%3EABP%3C/text%3E%3C/svg%3E">
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Datos para buscadores: quién eres, a qué te dedicas y dónde -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ana Belén Pérez de Haro",
-        "alternateName": "Ana Belén Pérez",
-        "jobTitle": "Marketing digital y comunicación audiovisual",
-        "url": "https://anabelenperezdh.github.io/",
-        "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "Almería",
-            "addressCountry": "ES"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/anabelenperezdeharo/"
-        ]
-    }
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav>
-        <a href="#" class="logo">ABP.</a>
+<!-- Sprig icon definido una vez, reutilizado con <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="olive-sprig" viewBox="0 0 200 60">
+    <path d="M5 50 Q 60 10 195 15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="42" cy="37" rx="15" ry="6.5" transform="rotate(-25 42 37)" fill="currentColor"/>
+    <ellipse cx="78" cy="23" rx="15" ry="6.5" transform="rotate(-15 78 23)" fill="currentColor"/>
+    <ellipse cx="115" cy="16" rx="14" ry="6" transform="rotate(-8 115 16)" fill="currentColor"/>
+    <ellipse cx="152" cy="13" rx="12" ry="5" transform="rotate(-3 152 13)" fill="currentColor"/>
+    <circle cx="18" cy="47" r="4.5" fill="currentColor" opacity="0.55"/>
+    <circle cx="28" cy="53" r="3.5" fill="currentColor" opacity="0.55"/>
+  </symbol>
+</svg>
 
-        <div class="nav-links">
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#trayectoria">Trayectoria</a>
-            <a href="#contacto">Contacto</a>
-        </div>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">Ana Belén</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+      <a href="#formacion" class="nav-link">Formación</a>
+      <a href="#experiencia" class="nav-link">Experiencia</a>
+      <a href="#habilidades" class="nav-link">Habilidades</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="assets/CV_AnaBelenPerezdeHaro.pdf" class="nav-cv" download>Descargar CV</a>
     </nav>
+  </div>
+</header>
 
+<main>
 
-    <!-- HERO -->
-
-    <header class="hero">
-
-        <div class="hero-small">
-            Marketing · Estrategia · Audiovisual · Almería
-        </div>
-
-        <h1>
-            Ana Belén<br>
-            <span>Pérez.</span>
-        </h1>
-
-        <div class="hero-bottom">
-
-            <div>
-                <p class="hero-description">
-                    Creo estrategias, contenidos e ideas digitales
-                    que ayudan a las marcas a <strong>conectar con las personas.</strong>
-                </p>
-
-                <a class="btn btn-primary hero-cta" href="CV_Ana_Belen_Perez.pdf" download>
-                    Descargar CV
-                </a>
-            </div>
-
-            <div class="scroll">
-                ↓ Explorar
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- ABOUT -->
-
-    <section class="about" id="sobre-mi">
-
-        <div class="section-label">
-            01 — Sobre mí
-        </div>
-
-        <h2 class="section-title">
-            Marketing con<br>
-            <em>visión creativa.</em>
-        </h2>
-
-        <div class="about-grid">
-
-            <div class="about-main">
-
-                <div class="about-text">
-
-                    Soy profesional del marketing digital con
-                    formación en estrategia, ecommerce,
-                    comunicación audiovisual y creación de contenido.
-
-                    <br><br>
-
-                    Me interesa especialmente la combinación entre
-                    <em>datos, creatividad y estrategia.</em>
-
-                </div>
-
-                <div class="about-more">
-
-                    <p>
-                        Mi camino empezó en el audiovisual. Estudié producción
-                        audiovisual y me formé en postproducción y edición de vídeo.
-                        En Atresmedia trabajé en la producción de informativos,
-                        coordinando entrevistas y reportajes con los tiempos de emisión,
-                        y en The Bridge edité contenido para redes sociales,
-                        campañas y eventos en streaming.
-                    </p>
-
-                    <p>
-                        Después di el salto al marketing con un MBA y un máster en
-                        Marketing Digital y Ecommerce. En Zara Ireland apliqué el
-                        visual marketing en tienda: analicé tendencias, comportamiento
-                        del consumidor y KPI para mejorar la experiencia de cliente
-                        y las ventas.
-                    </p>
-
-                    <p>
-                        Me gusta que una idea creativa tenga detrás datos y un
-                        objetivo claro. Por eso combino la mirada de quien produce
-                        contenido con la de quien analiza resultados y ajusta la
-                        estrategia. Busco incorporarme a un equipo de marketing
-                        digital donde aportar creatividad, organización y enfoque
-                        estratégico.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="about-side">
-
-                <!-- Sube tu foto con este nombre: ana.jpg -->
-                <figure class="about-photo">
-                    <img
-                        src="ana.jpg"
-                        alt="Retrato de Ana Belén Pérez"
-                        width="800"
-                        height="1000"
-                        data-optional
-                    >
-                </figure>
-
-                <div class="about-details">
-
-                    <div class="detail">
-                        <span>Formación</span>
-                        MBA + Máster en Marketing Digital y Ecommerce
-                    </div>
-
-                    <div class="detail">
-                        <span>Experiencia</span>
-                        Marketing · Audiovisual · Visual Marketing
-                    </div>
-
-                    <div class="detail">
-                        <span>Idiomas</span>
-                        Español · Inglés C1
-                    </div>
-
-                    <div class="detail">
-                        <span>Ubicación</span>
-                        Almería, España
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section class="projects" id="proyectos">
-
-        <div class="section-label">
-            02 — Proyectos
-        </div>
-
-        <h2 class="section-title">
-            Trabajo que<br>
-            <em>cuenta historias.</em>
-        </h2>
-
-        <p class="projects-intro">
-            Una selección de proyectos y casos prácticos
-            donde combino investigación, estrategia,
-            creatividad y comunicación.
+  <!-- SOBRE MÍ -->
+  <section class="hero" id="sobre-mi">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <svg class="sprig sprig-hero" aria-hidden="true"><use href="#olive-sprig"/></svg>
+        <h1>Ana Belén<br>Pérez de Haro</h1>
+        <p class="role">Marketing digital y contenido audiovisual, con base en Almería.</p>
+        <p class="bio">
+          MBA con especialización en Marketing Digital y Ecommerce, y experiencia previa
+          en edición de vídeo y postproducción. Me interesa el lado creativo y el lado
+          analítico del marketing a partes iguales: contar una historia y luego medir
+          si funciona.
         </p>
+        <div class="hero-actions">
+          <a href="#experiencia" class="btn btn-primary">Ver mi experiencia</a>
+          <a href="assets/CV_AnaBelenPerezdeHaro.pdf" class="btn btn-ghost" download>Descargar CV</a>
+        </div>
+      </div>
 
+      <div class="hero-photo">
+        <!-- Sustituye este bloque por tu foto real: <img src="assets/foto.jpg" alt="Ana Belén Pérez de Haro"> -->
+        <div class="photo-placeholder" role="img" aria-label="Foto de Ana Belén Pérez de Haro">AB</div>
+      </div>
+    </div>
+  </section>
 
-        <article class="project">
+  <!-- FORMACIÓN -->
+  <section class="section" id="formacion">
+    <div class="wrap">
+      <div class="section-heading">
+        <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
+        <h2>Formación</h2>
+      </div>
 
-            <div class="project-number">01</div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2025</span>
+            <h3>MBA + Máster en Marketing Digital y Ecommerce</h3>
+            <p>Escuela de Negocios de Barcelona</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 — 2022</span>
+            <h3>Máster en Postproducción y Edición de Vídeo</h3>
+            <p>The Core Entertainment</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">FP Grado Superior</span>
+            <h3>Producción Audiovisual, Eventos y Espectáculos</h3>
+            <p>Grupo Planeta</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">Idiomas</span>
+            <h3>Inglés — Nivel C1</h3>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-            <h3>
-                Estrategia<br>
-                Digital
-            </h3>
+  <!-- EXPERIENCIA -->
+  <section class="section section-alt" id="experiencia">
+    <div class="wrap">
+      <div class="section-heading">
+        <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
+        <h2>Experiencia</h2>
+      </div>
 
-            <div class="project-body">
-                <p class="project-description">
-                    Proyecto conceptual de estrategia digital
-                    para una marca turística local.
-                    Investigación, público objetivo,
-                    posicionamiento, contenido y KPIs.
-                </p>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2025</span>
+            <h3>Zara Ireland</h3>
+            <p class="role-label">Comercial y visual merchandiser</p>
+            <p>Atención al cliente y cuidado de la imagen visual de tienda.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — 2023</span>
+            <h3>The Bridge</h3>
+            <p class="role-label">Editora de vídeo y contenidos digitales</p>
+            <p>Edición de vídeo y creación de contenido digital.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="timeline-date">2020</span>
+            <h3>Atresmedia</h3>
+            <p class="role-label">Becaria de producción de informativos</p>
+            <p>Apoyo en la producción de contenidos informativos.</p>
+          </div>
+        </li>
+      </ol>
 
-                <ul class="project-tags">
-                    <li>Investigación</li>
-                    <li>Posicionamiento</li>
-                    <li>KPIs</li>
-                </ul>
-            </div>
+      <div class="reel-card">
+        <div class="reel-text">
+          <h3>Demo reel de postproducción</h3>
+          <p>Una selección de piezas editadas durante mi etapa como editora de vídeo (2023).</p>
+        </div>
+        <a href="https://youtu.be/Piquv6PM_PA" class="btn btn-ghost" target="_blank" rel="noopener">Ver en YouTube</a>
+      </div>
+    </div>
+  </section>
 
-            <!-- Imagen: proyecto-estrategia.jpg -->
-            <figure class="project-media">
-                <img
-                    src="proyecto-estrategia.jpg"
-                    alt="Imagen del proyecto de estrategia digital para una marca turística local"
-                    width="800"
-                    height="600"
-                    data-optional
-                >
-            </figure>
+  <!-- HABILIDADES -->
+  <section class="section" id="habilidades">
+    <div class="wrap">
+      <div class="section-heading">
+        <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
+        <h2>Habilidades</h2>
+      </div>
 
-        </article>
-
-
-        <article class="project">
-
-            <div class="project-number">02</div>
-
-            <h3>
-                Content &<br>
-                Social
-            </h3>
-
-            <div class="project-body">
-                <p class="project-description">
-                    Creación y edición de contenido audiovisual
-                    para comunicación digital y redes sociales
-                    durante mi etapa en The Bridge.
-                </p>
-
-                <ul class="project-tags">
-                    <li>Vídeo</li>
-                    <li>Streaming</li>
-                    <li>Redes sociales</li>
-                </ul>
-            </div>
-
-            <!-- Imagen: proyecto-content.jpg -->
-            <figure class="project-media">
-                <img
-                    src="proyecto-content.jpg"
-                    alt="Imagen de contenido audiovisual creado en The Bridge"
-                    width="800"
-                    height="600"
-                    data-optional
-                >
-            </figure>
-
-        </article>
-
-
-        <article class="project">
-
-            <div class="project-number">03</div>
-
-            <h3>
-                Visual<br>
-                Marketing
-            </h3>
-
-            <div class="project-body">
-                <p class="project-description">
-                    Experiencia en visual merchandising,
-                    análisis de tendencias, comportamiento
-                    del consumidor y experiencia de cliente
-                    durante mi etapa en Zara Ireland.
-                </p>
-
-                <ul class="project-tags">
-                    <li>Visual merchandising</li>
-                    <li>Análisis de KPI</li>
-                    <li>Experiencia de cliente</li>
-                </ul>
-            </div>
-
-            <!-- Imagen: proyecto-visual.jpg -->
-            <figure class="project-media">
-                <img
-                    src="proyecto-visual.jpg"
-                    alt="Imagen de visual marketing en tienda"
-                    width="800"
-                    height="600"
-                    data-optional
-                >
-            </figure>
-
-        </article>
-
-    </section>
-
-
-    <!-- TRAYECTORIA -->
-
-    <section class="journey" id="trayectoria">
-
-        <div class="section-label">
-            03 — Trayectoria
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Edición y postproducción de vídeo</h3>
+          <ul class="tag-list">
+            <li>Premiere Pro</li>
+            <li>After Effects</li>
+            <li>DaVinci Resolve</li>
+            <li>Cinema 4D</li>
+          </ul>
         </div>
 
-        <h2 class="section-title">
-            Cómo he llegado<br>
-            <em>hasta aquí.</em>
-        </h2>
-
-        <div class="journey-grid">
-
-            <div class="journey-col">
-
-                <h3 class="journey-heading">Experiencia</h3>
-
-                <div class="entry">
-                    <div class="entry-date">2023 – 2025</div>
-                    <div>
-                        <h4>Comercial / Visual Merchandiser</h4>
-                        <div class="entry-org">Zara Ireland</div>
-                        <p>
-                            Visual marketing para mejorar la experiencia de cliente,
-                            análisis de tendencias y KPI comerciales, y colaboración
-                            con el equipo regional de marketing en campañas y promociones.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-date">2022 – 2023</div>
-                    <div>
-                        <h4>Editora de vídeo y contenidos digitales</h4>
-                        <div class="entry-org">The Bridge</div>
-                        <p>
-                            Contenidos audiovisuales para redes y campañas, eventos en
-                            streaming y entrevistas para YouTube, Instagram y LinkedIn,
-                            con analítica para ajustar la estrategia de contenido.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-date">2020</div>
-                    <div>
-                        <h4>Becaria de producción de informativos</h4>
-                        <div class="entry-org">Atresmedia</div>
-                        <p>
-                            Coordinación de entrevistas, rodajes y reportajes, con foco
-                            en storytelling y narrativa visual.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="journey-col">
-
-                <h3 class="journey-heading">Formación</h3>
-
-                <div class="edu">
-                    <div class="edu-title">MBA + Máster en Marketing Digital y Ecommerce</div>
-                    <div class="edu-org">Escuela de Negocios de Barcelona · 2023 – 2025</div>
-                </div>
-
-                <div class="edu">
-                    <div class="edu-title">Máster en Postproducción y Edición de vídeo</div>
-                    <div class="edu-org">The Core Entertainment · 2021 – 2022</div>
-                </div>
-
-                <div class="edu">
-                    <div class="edu-title">FP Grado Superior en Producción audiovisual, eventos y espectáculos</div>
-                    <div class="edu-org">Grupo Planeta</div>
-                </div>
-
-            </div>
-
+        <div class="skill-group">
+          <h3>Diseño gráfico</h3>
+          <ul class="tag-list">
+            <li>Photoshop</li>
+          </ul>
         </div>
 
-    </section>
-
-
-    <!-- HABILIDADES -->
-
-    <section class="skills" id="habilidades">
-
-        <div class="section-label">
-            04 — Habilidades
+        <div class="skill-group">
+          <h3>Marketing digital</h3>
+          <ul class="tag-list">
+            <li>HubSpot</li>
+            <li>Meta</li>
+            <li>Google</li>
+          </ul>
+          <p class="skill-note">Formación en curso</p>
         </div>
 
-        <h2 class="section-title">
-            Habilidades y<br>
-            <em>herramientas.</em>
-        </h2>
-
-        <div class="skill-list">
-
-            <article class="skill">
-
-                <h3>
-                    Estrategia y<br>
-                    marketing digital
-                </h3>
-
-                <p class="skill-desc">
-                    Investigación de mercado, análisis de KPI y estrategias
-                    de contenido pensadas para el engagement y la
-                    visibilidad de marca.
-                </p>
-
-                <ul class="skill-tools">
-                    <li>
-                        <span class="tool-name">SEO y analítica</span>
-                    </li>
-                    <li class="tools-label">Formándome ahora</li>
-                    <li>
-                        <span class="tool-name">Gestión de redes sociales</span>
-                        <span class="tool-note">HubSpot</span>
-                    </li>
-                    <li>
-                        <span class="tool-name">Publicidad en Meta</span>
-                    </li>
-                    <li>
-                        <span class="tool-name">Publicidad en Google</span>
-                    </li>
-                </ul>
-
-            </article>
-
-            <article class="skill">
-
-                <h3>
-                    Vídeo y<br>
-                    postproducción
-                </h3>
-
-                <p class="skill-desc">
-                    Edición y postproducción para redes sociales, campañas,
-                    entrevistas y eventos en streaming, usando la analítica
-                    para ajustar el contenido.
-                </p>
-
-                <ul class="skill-tools">
-                    <li>
-                        <span class="tool-name">Adobe Premiere Pro</span>
-                        <span class="tool-note">Certificación con diploma</span>
-                    </li>
-                    <li>
-                        <span class="tool-name">After Effects</span>
-                        <span class="tool-note">Certificación con diploma</span>
-                    </li>
-                    <li>
-                        <span class="tool-name">DaVinci Resolve</span>
-                        <span class="tool-note">Incluida la edición por nodos</span>
-                    </li>
-                </ul>
-
-            </article>
-
-            <article class="skill">
-
-                <h3>
-                    Diseño y<br>
-                    visual marketing
-                </h3>
-
-                <p class="skill-desc">
-                    Visual marketing y branding con mirada de cliente:
-                    del visual merchandising en tienda al diseño gráfico
-                    y el 3D.
-                </p>
-
-                <ul class="skill-tools">
-                    <li>
-                        <span class="tool-name">Photoshop</span>
-                    </li>
-                    <li>
-                        <span class="tool-name">Cinema 4D</span>
-                    </li>
-                </ul>
-
-            </article>
-
+        <div class="skill-group">
+          <h3>Certificaciones</h3>
+          <p class="cert-item">Diploma en Premiere Pro</p>
+          <p class="cert-item">Diploma en After Effects</p>
+          <p class="cert-item">Blackmagic Design: Etalonaje con DaVinci Resolve 17 (2022)</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- CONTACTO -->
+  <section class="section section-alt contact" id="contacto">
+    <div class="wrap contact-inner">
+      <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
+      <h2>Hablemos</h2>
+      <p>Estoy buscando nuevas oportunidades en marketing digital y contenido audiovisual. Si mi perfil encaja con lo que necesitas, escríbeme.</p>
 
+      <div class="contact-actions">
+        <a href="https://www.linkedin.com/in/anabelenperezdeharo/" class="btn btn-primary" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/CV_AnaBelenPerezdeHaro.pdf" class="btn btn-ghost" download>Descargar CV</a>
+      </div>
 
-    <!-- CONTACT -->
+      <p class="location">Almería, España</p>
+    </div>
+  </section>
 
-    <section class="contact" id="contacto">
+</main>
 
-        <div class="section-label">
-            05 — Contacto
-        </div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Ana Belén Pérez de Haro</p>
+  </div>
+</footer>
 
-        <h2>
-            ¿Creamos algo<br>
-            <span>interesante?</span>
-        </h2>
-
-        <div class="contact-actions">
-
-            <!-- Cuando tu email del dominio funcione, cambia las dos direcciones de abajo por ana@anabelenperez.com -->
-            <a
-                class="contact-email"
-                href="mailto:anabelenperezh@gmail.com"
-            >
-                anabelenperezh@gmail.com
-            </a>
-
-            <a
-                class="contact-link"
-                href="https://www.linkedin.com/in/anabelenperezdeharo/"
-                target="_blank"
-                rel="noopener"
-            >
-                LinkedIn
-            </a>
-
-            <a class="btn btn-primary" href="CV_Ana_Belen_Perez.pdf" download>
-                Descargar CV
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <footer>
-
-        <span>© 2026 Ana Belén Pérez</span>
-
-        <span>Marketing · Estrategia · Audiovisual</span>
-
-    </footer>
-
-
-    <!-- Si una foto todavía no está subida, se oculta sin dejar un hueco roto -->
-    <script>
-        document.querySelectorAll('img[data-optional]').forEach(function (img) {
-            function hide() {
-                var figure = img.closest('figure');
-                figure.parentElement.classList.add('no-media');
-                figure.remove();
-            }
-            if (img.complete && img.naturalWidth === 0) {
-                hide();
-            } else {
-                img.addEventListener('error', hide);
-            }
-        });
-    </script>
-
+<script src="script.js"></script>
 </body>
 </html>
