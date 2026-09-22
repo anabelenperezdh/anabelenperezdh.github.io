@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- Sprig icon definido una vez, reutilizado con <use> -->
+<!-- Icono de rama de olivo, definido una vez y reutilizado -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="olive-sprig" viewBox="0 0 200 60">
     <path d="M5 50 Q 60 10 195 15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
@@ -24,9 +24,14 @@
     <circle cx="18" cy="47" r="4.5" fill="currentColor" opacity="0.55"/>
     <circle cx="28" cy="53" r="3.5" fill="currentColor" opacity="0.55"/>
   </symbol>
+  <symbol id="wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,40 C240,100 480,0 720,45 C960,90 1200,10 1440,45 L1440,100 L0,100 Z" fill="currentColor"/>
+  </symbol>
 </svg>
 
-<header class="site-header" id="top">
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
     <a class="logo" href="#top">Ana Belén</a>
 
@@ -45,10 +50,16 @@
   </div>
 </header>
 
-<main>
+<main id="top">
 
   <!-- SOBRE MÍ -->
   <section class="hero" id="sobre-mi">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1" data-speed="0.12"></span>
+      <span class="blob blob-2" data-speed="0.22"></span>
+      <svg class="sprig sprig-hero-bg" data-speed="0.16" aria-hidden="true"><use href="#olive-sprig"/></svg>
+    </div>
+
     <div class="wrap hero-inner">
       <div class="hero-text">
         <svg class="sprig sprig-hero" aria-hidden="true"><use href="#olive-sprig"/></svg>
@@ -67,22 +78,29 @@
       </div>
 
       <div class="hero-photo">
+        <span class="photo-glow" aria-hidden="true"></span>
         <!-- Sustituye este bloque por tu foto real: <img src="assets/foto.jpg" alt="Ana Belén Pérez de Haro"> -->
         <div class="photo-placeholder" role="img" aria-label="Foto de Ana Belén Pérez de Haro">AB</div>
       </div>
     </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
   </section>
 
+  <div class="divider divider-dark-to-light" aria-hidden="true">
+    <svg class="divider-shape" aria-hidden="true"><use href="#wave"/></svg>
+  </div>
+
   <!-- FORMACIÓN -->
-  <section class="section" id="formacion">
+  <section class="section section-light" id="formacion">
     <div class="wrap">
-      <div class="section-heading">
+      <div class="section-heading reveal-big">
         <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
         <h2>Formación</h2>
       </div>
 
       <ol class="timeline">
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">2023 — 2025</span>
@@ -90,7 +108,7 @@
             <p>Escuela de Negocios de Barcelona</p>
           </div>
         </li>
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">2021 — 2022</span>
@@ -98,7 +116,7 @@
             <p>The Core Entertainment</p>
           </div>
         </li>
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">FP Grado Superior</span>
@@ -106,7 +124,7 @@
             <p>Grupo Planeta</p>
           </div>
         </li>
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">Idiomas</span>
@@ -117,16 +135,24 @@
     </div>
   </section>
 
+  <div class="divider divider-light-to-dark" aria-hidden="true">
+    <svg class="divider-shape" aria-hidden="true"><use href="#wave"/></svg>
+  </div>
+
   <!-- EXPERIENCIA -->
-  <section class="section section-alt" id="experiencia">
+  <section class="section section-dark" id="experiencia">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-3" data-speed="0.1"></span>
+    </div>
+
     <div class="wrap">
-      <div class="section-heading">
+      <div class="section-heading reveal-big">
         <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
         <h2>Experiencia</h2>
       </div>
 
       <ol class="timeline">
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">2023 — 2025</span>
@@ -135,7 +161,7 @@
             <p>Atención al cliente y cuidado de la imagen visual de tienda.</p>
           </div>
         </li>
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">2022 — 2023</span>
@@ -144,7 +170,7 @@
             <p>Edición de vídeo y creación de contenido digital.</p>
           </div>
         </li>
-        <li class="timeline-item">
+        <li class="timeline-item reveal">
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <span class="timeline-date">2020</span>
@@ -155,7 +181,10 @@
         </li>
       </ol>
 
-      <div class="reel-card">
+      <div class="reel-card reveal">
+        <span class="reel-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        </span>
         <div class="reel-text">
           <h3>Demo reel de postproducción</h3>
           <p>Una selección de piezas editadas durante mi etapa como editora de vídeo (2023).</p>
@@ -165,16 +194,20 @@
     </div>
   </section>
 
+  <div class="divider divider-dark-to-light" aria-hidden="true">
+    <svg class="divider-shape" aria-hidden="true"><use href="#wave"/></svg>
+  </div>
+
   <!-- HABILIDADES -->
-  <section class="section" id="habilidades">
+  <section class="section section-light" id="habilidades">
     <div class="wrap">
-      <div class="section-heading">
+      <div class="section-heading reveal-big">
         <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
         <h2>Habilidades</h2>
       </div>
 
       <div class="skills-grid">
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Edición y postproducción de vídeo</h3>
           <ul class="tag-list">
             <li>Premiere Pro</li>
@@ -184,14 +217,14 @@
           </ul>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Diseño gráfico</h3>
           <ul class="tag-list">
             <li>Photoshop</li>
           </ul>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Marketing digital</h3>
           <ul class="tag-list">
             <li>HubSpot</li>
@@ -201,7 +234,7 @@
           <p class="skill-note">Formación en curso</p>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Certificaciones</h3>
           <p class="cert-item">Diploma en Premiere Pro</p>
           <p class="cert-item">Diploma en After Effects</p>
@@ -211,9 +244,13 @@
     </div>
   </section>
 
+  <div class="divider divider-light-to-dark" aria-hidden="true">
+    <svg class="divider-shape" aria-hidden="true"><use href="#wave"/></svg>
+  </div>
+
   <!-- CONTACTO -->
-  <section class="section section-alt contact" id="contacto">
-    <div class="wrap contact-inner">
+  <section class="section section-dark contact" id="contacto">
+    <div class="wrap contact-inner reveal-big">
       <svg class="sprig sprig-small" aria-hidden="true"><use href="#olive-sprig"/></svg>
       <h2>Hablemos</h2>
       <p>Estoy buscando nuevas oportunidades en marketing digital y contenido audiovisual. Si mi perfil encaja con lo que necesitas, escríbeme.</p>
